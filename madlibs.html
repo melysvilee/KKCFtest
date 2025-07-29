@@ -1,1 +1,30 @@
-# KKCFtest
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Madlibs</title>
+</head>
+<body>
+
+  <h2>My attempt to use Madlibs! </h2>
+
+  <!-- This paragraph will display the result -->
+  <p id="output"></p>
+
+  <script>
+
+  <input type="String" id="input1" placeholder="First word">
+  <input type="String" id="input2" placeholder="second word">
+    // Variables with parts of the sentence
+    var phraseStart = "How much I love to combine ";
+    var food = "instant soup";
+    var extra = " with lemon.";
+
+    // Concatenate the parts together
+    var fullSentence = phraseStart + food + extra;
+
+    // Show the sentence on the page
+    document.getElementById("output").textContent = fullSentence;
+  </script>
+
+</body>
+</html>
